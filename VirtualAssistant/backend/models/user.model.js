@@ -30,7 +30,7 @@ const usersSchema = new mongoose.Schema(
 
 //model based on above user schemea
 
-const User=mongoose.model("User",userSchema)
+const User=mongoose.model("User",usersSchema)
 
 export default User;
 

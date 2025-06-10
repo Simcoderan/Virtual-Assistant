@@ -1,4 +1,7 @@
 import mongoose from "mongoose"
+import dotenv from "dotenv"
+dotenv.config({ path: './.env' }); // if running from backend/
+
 
 const connectDb=async()=>{
     try {
@@ -7,7 +10,7 @@ const connectDb=async()=>{
         
     } catch (error) {
 
-        console.errorlog(error)
+        console.log(error)
         
     }
 }
