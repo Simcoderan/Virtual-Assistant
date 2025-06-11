@@ -63,6 +63,7 @@ export const signUp=async (req,res)=>{
         // Generate token
         const token = await genToken(user._id);
 
+        
         // Set cookie
         res.cookie("token", token, {
             httpOnly: true,
